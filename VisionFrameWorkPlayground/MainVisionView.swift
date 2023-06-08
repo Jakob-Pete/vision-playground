@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainVisionView.swift
 //  VisionFrameWorkPlayground
 //
 //  Created by mac on 6/7/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainVisionView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -21,6 +21,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainVisionView()
     }
 }
