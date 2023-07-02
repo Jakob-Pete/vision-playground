@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainVisionView: View {
+    @State private var isLiveTextRecognitionViewPresented = false
+    
     var body: some View {
         VStack {
             Image(systemName: "video")
@@ -15,6 +17,14 @@ struct MainVisionView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, vision framework!")
             Text("👓")
+            Button(action: {
+                isLiveTextRecognitionViewPresented = true
+            }) {
+                Text("Start!")
+            }
+            .sheet(isPresented: $isLiveTextRecognitionViewPresented) {
+                LiveTextRecognitionView()
+            }
         }
         .padding()
     }
