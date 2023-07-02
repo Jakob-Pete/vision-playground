@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Privacy – Camera Usage Description </key>
-	<string>For Scanning words</string>
+    <key>NSCameraUsageDescription</key>
+    <string>We need access to your camera to scan and recognize text from images.</string>
 </dict>
 </plist>

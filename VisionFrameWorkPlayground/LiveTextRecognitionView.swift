@@ -23,7 +23,7 @@ struct LiveTextRecognitionView: View {
             Text(scanText)
                 .frame(minWidth: 0, maxWidth: .infinity, maxHeight: .infinity)
                 .background(in: Rectangle())
-                .backgroundStyle(Color(uiColor: .systemBlue))
+                .backgroundStyle(Color(uiColor: .black))
         }
         .task {
             if DataScannerViewController.isSupported && DataScannerViewController.isAvailable {
