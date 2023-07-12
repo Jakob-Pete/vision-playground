@@ -28,11 +28,16 @@ struct DataScanner: UIViewControllerRepresentable {
 //            isGuidanceEnabled: true,
             isHighlightingEnabled: true)
         //        controller.recognizedItems
-                
+        
                 var overlayContainerView: UIView
+//        overlayContainerView.frame.size.width = 400
+//        overlayContainerView.frame.size.height = 400
+//        controller.overlayContainerView
+
         //        A view that the data scanner displays over its view without interfering with the Live Text interface.
         
                 var regionOfInterest: CGRect?
+        controller.regionOfInterest = CGRect(x: 100, y: 100, width: 400, height: 400)
 //                The area of the live video in view coordinates that the data scanner searches for items.
         
         controller.delegate = context.coordinator
